@@ -30,7 +30,7 @@ session_start();
                     <?php
                 if (isset($_GET['site'])) {
                     $site = ucfirst($_GET['site']);
-                    echo '<p>' . $site . " is temporarily down for maintenance. We should be back online shortly!</h4>";
+                    echo '<p>' . strip_tags($site) . " is temporarily down for maintenance. We should be back online shortly!</h4>";
                 } else {
                     echo '<h4>Temporarily down for maintenance! We should be back online shortly!';
                 }
